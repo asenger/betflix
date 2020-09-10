@@ -1,0 +1,18 @@
+<div class="movie-details">
+	<div class="movie-details-content">
+		<div class="movie-details-sidebar">
+			<div class="movie-details-cover"><img src="assets/images/movie-covers/{{movie.img}}" /></div>
+		</div>
+		<div class="movie-details-sidebar">
+			<div class="movie-details-title">
+				<h2>{{movie.name}}</h2>
+			</div>
+			<div class="movie-details-rate">Rate: {{movie.rate}}</div>
+			<div class="movie-details-duration">Duration: {{movie.length}}</div>
+			<div class="movie-details-description">{{movie.description}}</div>
+			<div class="movie-details-back-button">
+				<a [routerLink]="['/']">BACK</a>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,10 @@
+<div class="movie-list">
+	<div class="movie-list-search">
+		<app-search (input)="filterByName($event)"></app-search>
+	</div>
+	<div *ngIf="!isLoading" class="movie-list-content">
+		<div *ngFor="let movie of movies" class="movie-list-item">
+			<app-movie [movie]="movie"></app-movie>
+		</div>
+	</div>
+</div>
